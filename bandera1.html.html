@@ -1,0 +1,32 @@
+<canvas width="600" height="400">
+
+</canvas>
+    
+<script>
+    var pantalla= document.querySelector('canvas');
+    var pincel =pantalla.getContext("2d");// para trabajar en las dimensiones 
+
+
+    pincel.fillStyle='yellow' ;//Característica de color
+    pincel.fillRect(0,0,600,400); //rellenar rectángulo (inicio, inicio, eje horizontal, eje vertical) FUNCIÓN
+
+
+    pincel.fillStyle='blue' ;
+    pincel.fillRect(200,0,400,400);
+
+    pincel.fillStyle='red' ;
+    pincel.fillRect(400,0,200,400); // es una función 
+    
+    pincel.fillStyle='purple';
+    pincel.beginPath();  //comience a dibijar acá
+    pincel.moveTo(300,200);  //mueva por todo el canvas
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill();
+    
+
+    pincel.fillStyle='black';
+    pincel.beginPath(); 
+    pincel.arc(300,200,50,0,2*3,14);  //dibujar círculo (posición1, posición2, posición 3; radio*3.14)
+    pincel.fill();
+</script>

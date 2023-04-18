@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "abcd";
+    var contrasenhaRegistrada = "abcd321";
+
+    var maxintentos= 3;
+    var intentoactual=1;
+
+    while (intentoactual<=maxintentos){
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+        }
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        //final del loop
+        } else {
+            if (intentoactual==maxintentos && intentoactual++){
+                alert("Máximo de intentos permitidos");
+            }
+            else {
+                alert("inicio de sesión inválido. Favor intente de nuevo");
+            }
+        
+    }
+//CORREGIR!!!!!!!!
+</script>

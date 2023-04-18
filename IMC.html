@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA  CÁLUCO IMC</h1>
+<script>
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");  
+    }  
+    function imprimir (frase) {
+        document.write(frase);
+        saltarLinea();
+
+    }
+    function calularIMC(peso,altura){//calcular dos parámetros
+        imc=peso/(altura*altura);
+        return(imc); //siempre me debe retornar o no me marca nada
+    }
+
+    pesoMaria = 58
+    alturaMaria = 1.56
+    //imcMaria= (pesoMaria/(alturaMaria*alturaMaria))
+    imcMaria= calularIMC(pesoMaria,alturaMaria);
+    imprimir(" El IMC de Maria es: "+ imcMaria);
+
+    pesoFelipe = 75
+    alturaFelipe = 1.73 //los decimales con PUNTO
+    //imcFelipe= (pesoFelipe/(alturaFelipe*alturaFelipe))
+    imcFelipe= calularIMC(pesoFelipe,alturaFelipe);
+    imprimir(" El IMC de Felipe es: "+ imcFelipe);
+</script>
+
